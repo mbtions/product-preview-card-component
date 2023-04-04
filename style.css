@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
+p{
+    font-size: 14px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+}
+.content h1{
+    font-family: Fraunces, sans-serif;
+    color: hsl(212, 21%, 14%);
+}
+.product-type{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.content p{
+    font-family: Montserrat, sans-serif;
+    color: hsla(228, 12%, 48%, 0.8);
+}
+.product-details{
+    width: 50%;
+    padding: 30px;
+}
+.product-details p{
+    padding: 20px 20px 10px 0px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+.price-offer{
+    font-family: Fraunces, sans-serif;
+    font-size: x-large;
+    color: hsl(158, 36%, 37%);
+}
+span{
+    margin-right: 20px;
+}
+.price-whole{
+    padding: 10px;
+    top: 20px 0;
+}
+.product-img-desk{
+    width: 50%;   
+    border-radius: 10px 0 0 10px; 
+}
+.product-img-mob{
+    display: none;
+}
+#cart_btn{
+    width: 100%;
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-family: Monsterrat;
+    font-weight: 600;
+    font-size: smaller;
+}
+#cart_btn:hover{
+    background-color: hsl(158, 36%, 20%);
+}
+.cart-icon{
+    padding: 0 10px 0px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        position: absolute;
+        width: 92%;
+        margin: auto;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 10px 10px;        
+    }
+    .product-img-desk{
+        display: none;
+    }
+    .product-img-mob{
+        display: block;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: auto;
+    }
+    .product-details{
+        width: 100%;        
+    }
+}
